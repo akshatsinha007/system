@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextResultz | Register Student</title>
+  <link rel="stylesheet" href="../assets/css/studentregistration.css">
+  <link rel="icon" href="../assets/favicon.ico">
+  <script src="https://kit.fontawesome.com/552542671f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="nav">
+    <i class="fa-solid fa-house" onclick="openPage('./index.html')"></i>
+    <div class="headin">
+      NextResultz !
+    </div>
+  </div>
+  <div class="main">
+    <div class="container">
+      <div class="title">Register as a student!</div>
+      <div class="content">
+        <form action="/studentregistration" method="POST">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" name="name" required placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+              <span class="details">PRN</span>
+              <input type="text" name="prn" required placeholder="Enter your PRN " required>
+            </div>
+            <div class="input-box">
+              <span class="details">University mail</span>
+              <input type="email" name="email" required placeholder="Enter your University email" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Current semester</span>
+              <select required type="text" name="sem" id="sem">
+                <option disabled selected value> - select sem - </option>
+                <option value="I">Sem I</option>
+                <option value="II">Sem II</option>
+                <option value="III">Sem III</option>
+                <option value="IV">Sem IV</option>
+                <option value="V">Sem V</option>
+                <option value="VI">Sem VI</option>
+                <option value="VII">Sem VII</option>
+                <option value="VIII">Sem VIII</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <span class="details">Branch/Stream</span>
+              <select required type="text" name="branch" id="branch">
+                <option disabled selected value> - select branch - </option>
+                <option value="BTech CSE">BTech CSE</option>
+                <option value="BTech BioE">BTech BioE</option>
+                <option value="BCA">BCA</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <span class="details">Specialisation</span>
+              <select required type="text" name="spec" id="branch">
+                <option disabled selected value> - select spec. - </option>
+                <option value="AI/ML">AI/ML</option>
+                <option value="Web Dev">Web Dev</option>
+                <option value="Cyber Security">Cyber Security</option>
+                <option value="Data Science">Data Science</option>
+                <option value="N/A">Not Applicable</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input type="text" name="phone" placeholder="Enter your number" required maxlength="10">
+            </div>
+            <div class="input-box">
+              <span class="details">Personal mail</span>
+              <input type="email" name="per_mail" required placeholder="Enter your persinal mail" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input type="text" id="pswd" placeholder="Enter your password" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Confirm Password</span>
+              <input type="password" name="password" id="pswd-cnf" placeholder="Confirm your password" required>
+            </div>
+          </div>
+          <!-- <div class="gender-details">
+            <input type="radio" name="gender" id="dot-1">
+            <input type="radio" name="gender" id="dot-2">
+            <input type="radio" name="gender" id="dot-3">
+            <span class="gender-title">Gender</span>
+            <div class="category">
+              <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Other</span>
+              </label>
+            </div>
+          </div> -->
+          <div class="button">
+            <input type="submit" value="Register">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./studentRegistration.js"></script>
+</body>
+
+</html>
